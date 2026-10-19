@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to My Homepage - Stylesheet 3</title>
+  <style>
+    /* Reset & Base Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #333;
+      background-color: #f4f4f4;
+      line-height: 1.5;
+    }
+
+    /* Outer Wrapper Container */
+    .page-container {
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      padding: 25px 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Headings & Text */
+    h1 {
+      color: #3b9c56;
+      font-size: 38px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      color: #111;
+      margin-bottom: 25px;
+    }
+
+    h2 {
+      color: #3b9c56;
+      font-size: 28px;
+      font-weight: bold;
+      margin-top: 25px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 15px;
+      margin-bottom: 15px;
+      color: #111;
+    }
+
+    a {
+      color: #111;
+      text-decoration: underline;
+    }
+
+    /* Top Horizontal Menu Grid */
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 30px;
+      max-width: 600px;
+    }
+
+    .menu-btn {
+      display: block;
+      padding: 10px 0;
+      text-align: center;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: bold;
+      color: #ffffff;
+      background-color: #555555;
+      border-radius: 2px;
+    }
+
+    /* Active Menu Button (Green - Stylesheet 3) */
+    .menu-btn.active {
+      background-color: #00a86b;
+    }
+
+    /* Side-Bar Box Section (Light Gray Box with Green Title) */
+    .sidebar-box {
+      background-color: #f1f1f1;
+      border: 1px solid #e0e0e0;
+      padding: 20px 25px;
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+
+    .sidebar-box h3 {
+      color: #3b9c56;
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .menu-btn a:hover{
+        background-color: black;
+
+    }
+
+    .sidebar-box p {
+      color: #333;
+      margin-bottom: 0;
+    }
+
+    /* Bottom Footer Paragraph */
+    footer p {
+      font-size: 13.5px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .link:hover{
+        color: #3b9c56;
+    }
+
+    .menu-grid a:hover{
+        background-color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-container">
+    
+    <!-- Top Header -->
+    <h1>Welcome to My Homepage</h1>
+    <p class="subtitle">Use the menu to select different Stylesheets</p>
+
+    <!-- Navigation Menu Grid -->
+    <nav class="menu-grid">
+      <a href="Stylesheet1.html" class="menu-btn">Stylesheet 1</a>
+      <a href="Stylesheet2.html" class="menu-btn">Stylesheet 2</a>
+      <a href="Stylesheet3.html" class="menu-btn active">Stylesheet 3</a>
+      <a href="Stylesheet4.html" class="menu-btn">Stylesheet 4</a>
+      <a href="Stylesheet0.html" class="menu-btn">No Stylesheet</a>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main>
+      <h2>Same Page Different Stylesheets</h2>
+      <p>
+        This is a demonstration of how different stylesheets can change the layout of your HTML page. 
+        You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:<br>
+        <a href="Stylesheet1.html" class="link">Stylesheet1</a>, <a href="Stylesheet2.html" class="link">Stylesheet2</a>, <a href="Stylesheet3.html" class="link" >Stylesheet3</a>, <a href="Stylesheet4" class="link" >Stylesheet4</a>.
+      </p>
+
+      <h2>No Styles</h2>
+      <p>
+        This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:<br>
+        <a href="Stylesheet0.html" class="link" >No Stylesheet</a>.
+      </p>
+
+      <!-- Side-Bar Gray Box -->
+      <section class="sidebar-box">
+        <h3>Side-Bar</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        </p>
+      </section>
+    </main>
+
+    <!-- Footer Text Section -->
+    <footer>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+      </p>
+    </footer>
+
+  </div>
+
+</body>
+</html>

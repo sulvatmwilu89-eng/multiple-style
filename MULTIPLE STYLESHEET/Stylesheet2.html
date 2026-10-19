@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to My Homepage</title>
+  <style>
+    /* Reset & General Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #333;
+      background-color: #f4f4f4;
+      line-height: 1.5;
+    }
+
+    /* Outer Wrapper with Red Left Border */
+    .page-container {
+      max-width: 960px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      border-left: 10px solid #d9534f;
+    }
+
+    /* Header Banner */
+    header {
+      background-color: #d9534f;
+      color: white;
+      padding: 40px 30px;
+    }
+
+    header h1 {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 22px;
+    }
+
+    /* Layout Structure: Main Content & Sidebar Buttons */
+    .content-wrapper {
+      display: flex;
+      padding: 30px;
+      gap: 20px;
+    }
+
+    .main-text {
+      flex: 1;
+    }
+
+    .main-text h2 {
+      color: #c9302c;
+      font-size: 26px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    .main-text p {
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .main-text a {
+      color: #c9302c;
+      text-decoration: underline;
+    }
+
+    /* Right Navigation Buttons */
+    .menu-buttons {
+      width: 220px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .btn {
+      display: block;
+      padding: 12px 20px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 25px;
+      border: 1px solid #c9302c;
+      transition: background-color 0.2s;
+    }
+
+    .btn-filled {
+      background-color: #c9302c;
+      color: white;
+    }
+    .btn-filled:hover{
+        color: #c9302c;
+        background-color: #f2dede;
+    } 
+
+    .btn-outlined {
+      background-color: white;
+      color: #c9302c;
+    }
+
+    /* Side-Bar Section (Light Pink Background) */
+    .sidebar-box {
+      background-color: #fbeedb; /* Light tint section background */
+      border-top: 1px solid #f2dede;
+      padding: 30px;
+    }
+
+    .sidebar-box h3 {
+      color: #c9302c;
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+
+    .sidebar-box p {
+      color: #c9302c;
+    }
+
+    /* Footer Section (Red Background) */
+    footer {
+      background-color: #c9302c;
+      color: white;
+      padding: 25px 30px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-container">
+    
+    <!-- Top Header Banner -->
+    <header>
+      <h1>Welcome to My Homepage</h1>
+      <p>Use the menu to select different Stylesheets</p>
+    </header>
+
+    <!-- Main Content & Navigation Buttons -->
+    <div class="content-wrapper">
+      <div class="main-text">
+        <h2>Same Page Different Stylesheets</h2>
+        <p>
+          This is a demonstration of how different stylesheets can change the layout of your HTML page. 
+          You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:<br>
+          <a href="#">Stylesheet1</a>, <a href="#">Stylesheet2</a>, <a href="#">Stylesheet3</a>, <a href="#">Stylesheet4</a>.
+        </p>
+
+        <h2>No Styles</h2>
+        <p>
+          This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:<br>
+          <a href="#">No Stylesheet</a>.
+        </p>
+      </div>
+
+      <!-- Navigation Menu -->
+      <nav class="menu-buttons">
+        <a href="Stylesheet1.html" class="btn btn-filled">Stylesheet 1</a>
+        <a href="Stylesheet2.html" class="btn btn-outlined">Stylesheet 2</a>
+        <a href="Stylesheet3.html" class="btn btn-filled">Stylesheet 3</a>
+        <a href="Stylesheet4.html" class="btn btn-filled">Stylesheet 4</a>
+        <a href="Stylesheet0.html" class="btn btn-filled">No Stylesheet</a>
+      </nav>
+    </div>
+
+    <!-- Side-Bar Box Area -->
+    <section class="sidebar-box">
+      <h3>Side-Bar</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+      </p>
+    </section>
+
+    <!-- Bottom Footer -->
+    <footer>
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+    </footer>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to My Homepage - Stylesheet 4</title>
+  <style>
+    /* Global Reset & Dark Monospace Theme */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #000000;
+      color: #7ec850;
+      font-family: "Courier New", Courier, monospace;
+      padding: 20px;
+      line-height: 1.5;
+    }
+
+    /* Container Wrapper */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Header Section */
+    h1 {
+      color: #7ec850;
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: #7ec850;
+      font-size: 15px;
+      margin-bottom: 30px;
+    }
+
+    /* Upper Layout: Navigation List (Left) & Sidebar (Right) */
+    .top-layout {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    /* Navigation List */
+    .nav-list {
+      list-style-type: disc;
+      padding-left: 20px;
+      flex: 1;
+    }
+
+    .nav-list li {
+      margin-bottom: 12px;
+      font-size: 18px;
+    }
+
+    .nav-list a {
+      color: #7ec850;
+      text-decoration: none;
+    }
+
+    .nav-list .active a {
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    /* Sidebar Box (Outlined) */
+    .sidebar-box {
+      border: 1px solid #ffffff;
+      border-radius: 8px;
+      padding: 20px;
+      flex: 1.2;
+      background-color: #000000;
+    }
+
+    .sidebar-box h3 {
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .sidebar-box p {
+      color: #ffffff;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    /* Main Content Sections */
+    h2 {
+      color: #7ec850;
+      font-size: 28px;
+      font-weight: bold;
+      margin-top: 25px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      color: #7ec850;
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+
+    a {
+      color: #7ec850;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Header -->
+    <h1>Welcome to My Homepage</h1>
+    <p class="subtitle">Use the menu to select different Stylesheets</p>
+
+    <!-- Top Layout with Menu and Side-Bar -->
+    <div class="top-layout">
+      <!-- Left List Menu -->
+      <ul class="nav-list">
+        <li><a href="Stylesheet1.html">Stylesheet 1</a></li>
+        <li><a href="Stylesheet2.html">Stylesheet 2</a></li>
+        <li><a href="Stylesheet3.html">Stylesheet 3</a></li>
+        <li class="active"><a href="Stylesheet4.html">Stylesheet 4</a></li>
+        <li><a href="Stylesheet0.html">No Stylesheet</a></li>
+      </ul>
+
+      <!-- Right Side-Bar Box -->
+      <aside class="sidebar-box">
+        <h3>Side-Bar</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        </p>
+      </aside>
+    </div>
+
+    <!-- Content Sections -->
+    <main>
+      <h2>Same Page Different Stylesheets</h2>
+      <p>
+        This is a demonstration of how different stylesheets can change the layout of your HTML page. 
+        You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:<br>
+        <a href="#">Stylesheet1</a>, <a href="#">Stylesheet2</a>, <a href="#">Stylesheet3</a>, <a href="#">Stylesheet4</a>.
+      </p>
+
+      <h2>No Styles</h2>
+      <p>
+        This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:<br>
+        <a href="#">No Stylesheet</a>.
+      </p>
+    </main>
+
+  </div>
+
+</body>
+</html>
